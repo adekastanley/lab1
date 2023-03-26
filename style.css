@@ -118,10 +118,10 @@ nav ul li{
     .logo-container {
         position: relative;
         display: flex;
-      
+        width: 40%;
         /* margin-inline: auto; */
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: auto;
+        margin-right: auto;
 
         top: 0%;
         left: 0%;
