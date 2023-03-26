@@ -98,15 +98,7 @@ nav ul li{
     
     /* hamburger */
     .ham-container {
-        width: 4rem;
-        height: 2.5rem;
-        /* background-color: blue; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        position: absolute;
-        top: 30%;
+        display: none;
     }
     .ham-container .line {
         width: 3rem;
@@ -118,7 +110,7 @@ nav ul li{
         display: flex;
       
         /* margin-inline: auto; */
-        margin-left: auto;
+        margin-left: 2%;
         margin-right: auto;
         background-color: blue;
     }
