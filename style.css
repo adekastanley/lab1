@@ -24,6 +24,13 @@ main {
     width: 100%; 
     max-width: 3840px;
 }
+button {
+    width: 10rem;
+    height: 2rem;
+}
+button:hover {
+    cursor: pointer;
+}
 
 
 header {
@@ -121,7 +128,11 @@ sections
     background-color: var(--primary-color);
  }
 
-
+ .wrapper {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+ }
 /* 
 
 ==========
@@ -134,22 +145,24 @@ section 1
     /* width: 100%; */
     /* background-color: rgba(255, 0, 0, 0.29); */
     padding-top: 4rem ;
+    /* background-image: url('./images/lab.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
  }
  .section-1 .wrapper{
-    width: 90%;
-    height: 100%;
-    background-color: red;
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+
  }
  .section-1 .wrapper div {
     width: 100%
  }
 
  .section-1 .image-container {
-    background-color: yellow;
+
     height: 100%;
     display: flex;
     align-items: center;
@@ -164,14 +177,47 @@ section 1
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(0, 128, 0, 0.47);
+
     align-items: center;
+    text-align: center;
+    padding: 1%;
  }
 
  .text-container button {
-    width: 10rem;
-    height: 2rem;
+
  }
+
+
+ /* 
+
+==========
+section 2
+==========
+
+ */
+ .section-2 {
+    background-color: rgb(21, 18, 117);
+    padding: 3% 0;
+ }
+ .section-2 .wrapper {
+
+ }
+ .section-2 .wrapper .top-section {
+    background-color: red;
+    height: 20%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    align-items: center;
+    
+ }
+ .top-section button {
+
+ 
+ }
+
+
+
 @media screen and (min-width: 1000px) {
     header {
         width: 100%;
@@ -190,11 +236,12 @@ section 1
     .logo-container {
         position: relative;
         display: flex;
-        width: 40%;
-        margin-left: auto;
+        justify-content: flex-start;
+        width: 20%;
+        /* margin-left: auto; */
         margin-right: auto;
         top: 0%;
-        left: 0%;
+        left: 2%;
     }
     
     /* nav and nav-links  */
@@ -236,7 +283,7 @@ section 1 pc
 
     .section-1 .wrapper{
 
-        background-color: red;
+        /* background-color: red; */
         display: flex;
         flex-direction: row;
         align-items: center;
