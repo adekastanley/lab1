@@ -53,6 +53,7 @@ header {
     background-color: blue;
     top: 4%;
     left: 50%;
+    z-index: 2;
 
 }
 
@@ -68,6 +69,7 @@ nav {
     justify-content: space-around;
     width: 100%;
     height: 100%;
+    z-index: 1;
     
     
 }
@@ -77,8 +79,8 @@ nav ul{
     background-color: green;
     flex-direction: column;
     justify-content: center;
-    height: 40%;
-    top: 10%;
+    height: 100%;
+
     width: 100%;
     padding-left: 30%;
 
@@ -118,8 +120,11 @@ nav ul li{
         display: flex;
       
         /* margin-inline: auto; */
-        margin-left: 2%;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
+
+        top: 0%;
+        left: 0%;
         background-color: blue;
     }
     
@@ -133,6 +138,8 @@ nav ul li{
         width: 30%;
         right: 0;
         justify-content: space-around;
+
+
         
     }
     nav ul{
