@@ -3,8 +3,56 @@
     margin: 0;
     padding: 0;
 }
-
 li, a {
     list-style-type: none;
     text-decoration: none;
+}
+header {
+    background-color: red;
+    width: 100dvw;
+    height: 10dvh;
+    max-width: 3840px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+/* hamburger */
+.ham-container {
+    width: 4rem;
+    height: 2.5rem;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+}
+.ham-container .line {
+    width: 3rem;
+    height: .3rem;
+    background-color: yellow;
+}
+.logo-container {
+    position: relative;
+    display: flex;
+  
+    /* margin-inline: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+}
+
+/* nav and nav-links  */
+
+nav {
+    position: absolute;
+    margin-left: auto;
+    display: flex;
+    background-color: yellow;
+    width: 30%;
+    right: 0;
+    justify-content: space-around;
+    
 }
