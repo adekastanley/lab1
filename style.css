@@ -9,12 +9,12 @@ li, a {
 }
 header {
     background-color: red;
-    width: 100dvw;
-    height: 10dvh;
+    width: 50dvw;
+    height: 100dvh;
     max-width: 3840px;
     position: relative;
     display: flex;
-    align-items: center;
+
 
 }
 
@@ -28,12 +28,19 @@ header {
     justify-content: space-around;
     align-items: center;
     position: absolute;
+    z-index: 2;
+    top: 3%;
 }
 .ham-container .line {
     width: 3rem;
     height: .3rem;
-    background-color: yellow;
+    background-color: rgb(0, 0, 0);
 }
+.ham-container:hover {
+    cursor: pointer;
+}
+
+/* logo  */
 .logo-container {
     position: relative;
     display: flex;
@@ -54,5 +61,78 @@ nav {
     width: 30%;
     right: 0;
     justify-content: space-around;
+    width: 100%;
+    height: 100%;
     
+}
+nav ul{
+    display: flex;
+    position: relative;
+    background-color: green;
+    flex-direction: column;
+    justify-content: center;
+    height: 40%;
+    top: 10%;
+    width: 100%;
+    padding-left: 30%;
+
+    
+}
+nav ul li{
+    margin: 3rem 0;
+  
+}
+
+
+@media screen and (min-width: 1000px) {
+    header {
+        background-color: red;
+        width: 100dvw;
+        height: 10dvh;
+        max-width: 3840px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    
+    }
+    
+    /* hamburger */
+    .ham-container {
+        width: 4rem;
+        height: 2.5rem;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+    }
+    .ham-container .line {
+        width: 3rem;
+        height: .3rem;
+        background-color: yellow;
+    }
+    .logo-container {
+        position: relative;
+        display: flex;
+      
+        /* margin-inline: auto; */
+        margin-left: auto;
+        margin-right: auto;
+        background-color: blue;
+    }
+    
+    /* nav and nav-links  */
+    
+    nav {
+        position: absolute;
+        margin-left: auto;
+        display: flex;
+        background-color: yellow;
+        width: 30%;
+        right: 0;
+        justify-content: space-around;
+        
+    }
 }
